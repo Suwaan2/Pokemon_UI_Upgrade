@@ -23,7 +23,7 @@ fetchButton.addEventListener('click', async () => {
         <div class="card mb-3">
           <img src="${pokemonData.sprites.front_default}" class="card-img-top" alt="${pokemonData.name}" onError="this.onerror=null;this.src='./error.png'">
           <div class="card-body">
-            <h5 class="card-title">${pokemonData.name} (#${pokemonData.id})</h5>
+            <h5 class="card-title">${pokemonData.name} ('#'${pokemonData.id})</h5>
           </div>
         </div>
       `;
