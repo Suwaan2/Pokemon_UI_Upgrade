@@ -21,8 +21,8 @@ fetchButton.addEventListener('click', async () => {
 
         pokemonCard.innerHTML = `
         <div class="card mb-3">
-          <img src="${pokemonData.sprites.front_default}" class="card-img-top" alt="${pokemonData.name}" onError="this.onerror=null;this.src='./error.png'">
-          <div class="card-body">
+          <img src="${pokemonData.sprites.front_default}" class="card-img-top " alt="${pokemonData.name}" onError="this.onerror=null;this.src='./error.png'">
+          <div class="card-body" style="color:black">
             <h5 class="card-title">${pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1)} (#${pokemonData.id})</h5>
             <p>Type: ${pokemonData.types.map(type => type.type.name).join(', ')}</p>
             <p>Height: ${pokemonData.height}</p>
